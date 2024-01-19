@@ -1,8 +1,28 @@
 .nav {
-  background-color: red;
-  padding: 50px 100px;
+  background-color: #2d2d2d;
+  position: fixed;
+  width: 30%;
+  margin: 0 auto;
+  top: 20px;
+  border-radius: 50px;
+  padding: 20px 0px;
+  left: 50%;
+  z-index: 10;
+  transform: translateX(-50%);
 }
 
-.list {
+.nav ul {
   display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.nav ul li {
+  list-style: none;
+  transform: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.nav ul li:hover {
+  transform: scale(1.05);
 }
